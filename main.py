@@ -5,9 +5,7 @@ import colorama
 from colorama import Fore
 import random
 
-token = "MTAxMzExMTgwNjUyMjMxMDY1OA.GF5qrV.1GJuC_2onKYDAPXlMCjra_-qtL_uPJOryBlFd4"
-nombre = "fucked by ghost"
-
+token = "your_token"
 
 colors = {"main": Fore.RED,
           "white": Fore.WHITE,
@@ -28,7 +26,7 @@ with open('image.png', 'rb') as f:
 @bot.event
 async def on_ready():
  await bot.change_presence(status=discord.Status.dnd, activity=discord.Game('?'))    
- print(f'''{Fore.LIGHTGREEN_EX}
+ print(f'''
 
  ▄▄▄       ██ ▄█▀▓█████ ▓█████  ██▓    
 ▒████▄     ██▄█▒ ▓█   ▀ ▓█   ▀ ▓██▒    
@@ -136,6 +134,5 @@ nc(cambia el nombre de todos)```''', inline = False)
         embedVar.set_image(url="https://c.tenor.com/lsPwkez1CooAAAAC/lucii-block6.gif")
         embedVar.set_footer(text=f"ByNinjabrine")
         await ctx.send(embed=embedVar)
-
-
+             
 bot.run(token)
